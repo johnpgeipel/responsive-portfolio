@@ -1,45 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Basic Portfolio</title>
-</head>
-<body>
-    <div class="heading">
-        <div class="topbox">
-            <div class="name">John P. Geipel</div>
-            <div class="nav">
-                <div class="boxOne"><a href="portfolio.html">Portfolio</a></div>
-                <div class="boxTwo"><a href="contact.html">Contact</a></div>
-                <div class="boxThree"><a href="index.html">About</a></div>
-            </div>      
-        </div>
-    </div>
-    <div class="content">
-        <div class="container about">
-            <div class="article">
-                <h1>Contact</h1>
-                <div class="contentbio">
-                        <form>
-                            Name:<br>
-                                <input type="text" name="formname"><br>
-                            Email:<br>
-                                <input type="text" name="formemail"><br>
-                            Message:<br>
-                                <input class="message" type="text" name="formmessage"><br>
-                        </form>
-                        <button type="submit">Submit</button>
+<!doctype html>
+<html lang="en-us">
 
-                </div>
-                
-            </div>
-    </div> <!--content-->
-    <div class="footer">© Copyright John P. Geipel</div>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Your Name</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
 </body>
 
 </html>
